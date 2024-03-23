@@ -104,6 +104,23 @@ In this example:
 When main() is called, space for its local variables (e.g., a) is allocated on the stack.
 When foo() is called from main(), space for its parameters (e.g., x) and local variables (e.g., y) is allocated on top of the stack.
 After foo() finishes execution, its stack frame is popped off the stack, and control returns to main().
+
+|------------|
+|     y      |   <-- Top of the stack (SP points here)
+|     x      |
+|------------|
+
+
+
+|------------|
+|     a      |   <-- Top of the stack (SP points here)
+|------------|
+
+Inside foo: x = 5, y = 10
+Inside main: a = 5
+
+
+
 Conclusion:
 The memory stack within the CPU plays a crucial role in managing program execution and memory allocation. It provides a structured way to store data temporarily and manage function calls and local variables efficiently.
 *********************************************************************************************************************************************************************
