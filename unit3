@@ -213,7 +213,57 @@ Immediate: You're given the data directly.
 Indexed: You calculate the location based on another location and an offset.
 Relative: You move relative to your current location.
 These simplified examples demonstrate the basic concepts of addressing modes using a library analogy. Let me know if you need further clarification!
+*******************************************************************************************************************************************************************************
 
+CISC (Complex Instruction Set Computing) and RISC (Reduced Instruction Set Computing) are two contrasting approaches to CPU (Central Processing Unit) design. They differ in their instruction set architectures and overall design philosophies. Let's break down each one:
+
+CISC (Complex Instruction Set Computing):
+Instruction Set Complexity:
+
+CISC architectures have a complex instruction set with a wide variety of instructions.
+Instructions can perform multiple operations and access memory in various ways.
+Microprogramming:
+
+CISC CPUs often use microcode to implement complex instructions.
+Microcode translates high-level instructions into simpler microinstructions that the CPU executes.
+Features:
+
+Support for multi-step operations and complex addressing modes.
+Hardware-based support for high-level language constructs (like loops and procedures).
+Large and flexible instruction set, which may include instructions for arithmetic, logic, string manipulation, etc.
+Examples:
+
+x86 architecture (Intel and AMD processors) is a classic example of CISC architecture.
+It includes instructions like ADD, SUB, MUL, DIV, as well as more complex instructions like string manipulation and floating-point arithmetic.
+RISC (Reduced Instruction Set Computing):
+Instruction Set Simplicity:
+
+RISC architectures have a simpler instruction set with fewer instructions.
+Instructions are designed to perform basic operations efficiently.
+Simplified Pipeline:
+
+RISC CPUs typically have a simpler pipeline design, with fewer stages.
+This allows for faster instruction execution and higher clock speeds.
+Features:
+
+Emphasis on optimizing common case execution speed.
+Fixed-length instructions for easy decoding and pipelining.
+Most operations are performed using registers, reducing memory access.
+Examples:
+
+ARM (Advanced RISC Machines) architecture is a prominent example of RISC architecture.
+It includes basic instructions like ADD, SUB, LOAD, STORE, etc., with a focus on efficiency and simplicity.
+Comparison:
+CISC:
+
+Emphasizes complex instructions to perform multiple tasks in a single operation.
+Suitable for general-purpose computing tasks with varying requirements.
+Offers flexibility and compatibility but may sacrifice speed and power efficiency.
+RISC:
+
+Focuses on simplicity and efficiency, favoring fast execution of common operations.
+Ideal for applications requiring high performance and low power consumption.
+May require
 
 
 
