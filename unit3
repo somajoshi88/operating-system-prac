@@ -39,14 +39,28 @@ The organization of CPU registers is essential for efficient processing and cont
 
 In short- CPU register organization refers to how a computer's processor (CPU) manages and utilizes its internal memory storage areas called registers. Here's an easy definition:
 
-CPU Register Organization:
-
-CPU registers are small storage locations inside the CPU that hold temporary data and control information during program execution.
-Registers are organized into different types, such as general-purpose registers, special-purpose registers, and flags registers.
-General-purpose registers hold data for calculations and other operations.
-Special-purpose registers serve specific functions within the CPU, like keeping track of memory addresses or instruction pointers.
-Flags registers store status flags that indicate the outcome of arithmetic or logical operations, such as whether the result is zero or if there was an overflow.
-The organization of CPU registers is essential for efficient processing and control flow in a computer system.
+|------------------------------------|
+|    General-Purpose Registers       |
+|------------------------------------|
+|           A (accumulator)          |
+|           B (base)                 |
+|           IR (index)               |
+|                                    |
+|------------------------------------|
+|    Special-Purpose Registers       |
+|------------------------------------|
+|            IP (instruction pointer)|
+|            SP (stack pointer)      |
+|            PC (program counter)    |
+|                                    |
+|------------------------------------|
+|            Flags Register           |
+|------------------------------------|
+|            Z (zero flag)           |
+|            C (carry flag)          |
+|            O (overflow flag)       |
+|                                    |
+|------------------------------------|
 
 *************************************************************************************************************************************************************************************
 memory stack
