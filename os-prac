@@ -1,0 +1,87 @@
+#!/bin/bash
+
+echo enter n
+read n
+num=0
+while [ $n -gt 0 ]
+do
+num=$(expr $num \* 10)
+k=$(expr $n % 10)
+num=$(expr $num + $k)
+n=$(expr $n / 10)
+done
+echo number is $num
+
+**********************************************************************************************
+ mv test1 test2
+
+WAP that echoes itself to stdout, but backwards.
+echo “enter your text”
+**************************************************************************************************
+
+cat > f1
+
+rev f1 | cat > f2
+
+cat f2
+********************************************************************************************
+Create a data file called employee in the format given below:
+a. EmpCode    Character
+
+b. EmpName   Character
+
+c. Grade           Character
+
+d. Years of experience    Numeric
+
+e. Basic Pay     Numeric
+
+$vi employee
+
+A001           ARJUN       E1      01      12000.00
+
+A006           Anand         E1      01      12450.00
+
+A010           Rajesh         E2      03      14500.00
+
+A002           Mohan         E2      02      13000.00
+
+A005           John             E2      01      14500.00
+
+A009           Denial SmithE2      04      17500.00
+
+A004           Williams      E1      01      12000.00
+
+2.)  Sort the file on EmpCode.
+
+$cut –f1 employee | sort
+
+Sort the file on EmpName.
+$cut –f2 employee | sort
+
+Sort the file on
+(i) Decreasing order of basic pay
+
+(ii) Increasing order of years of experience.
+
+(i) $cut –f5 employee | sort –r
+
+(ii) $cut –f4 employee | sort
+
+Display the number of employees whose details are included in the file.
+wc –l
+
+Display all records with ‘smith’ a part of employee name.
+cut –f2 –d “ ” employee | grep ‘^[smith]’ | wc –l
+
+Display all records with EmpName starting with ‘B’.
+$cut –f2 employee | grep ‘^[B]’ | wc –l
+
+Display the records on Employees whose grade is E2 and have work experience of 2 to 5 years.
+$cut –f3 employee | grep ‘[*2] | cut –f4 employee | grep ‘[2-5]’
+
+Store in ‘file 1’ the names of all employees whose basic pay is between 10000 and 15000.
+$cut –f2,5 employee | grep ‘[10000-15000]’ > rec
+
+Display records of all employees who are not in grade E2.
+$cut –f3 employee | grep ‘[*1]’
