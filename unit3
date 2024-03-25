@@ -133,8 +133,6 @@ Pop: Removing data from the stack. This operation retrieves data from the memory
 Example:
 Consider a simple function call scenario:
 
-c
-Copy code
 void foo(int x) {
     int y = 10;
     // Some operations
