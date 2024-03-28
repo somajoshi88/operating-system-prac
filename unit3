@@ -169,7 +169,71 @@ Inside main: a = 5
 Conclusion:
 The memory stack within the CPU plays a crucial role in managing program execution and memory allocation. It provides a structured way to store data temporarily and manage function calls and local variables efficiently.
 *********************************************************************************************************************************************************************
+ 
 
+ 
+
+ 
+
+ 
+
+ 
+
+Instruction register                                             Memory(X) 
+
+ 
+
+Type of instruction 
+
+Data transfer resigter R1 R2 
+
+Data manipulation addition , substraction, multiplication 
+
+Program controll(loop,if..) 
+
+ 
+
+Data transfer instructions are a type of CPU instruction that moves data between different locations in memory or between memory and registers. These instructions are fundamental for manipulating data within a computer system. Here are some common data transfer instructions: 
+
+Load (LD): 
+
+The load instruction transfers data from memory to a register. 
+
+Example: LD R1, 1000 (Load the value stored at memory address 1000 into register R1). 
+
+Store (ST): 
+
+The store instruction transfers data from a register to memory. 
+
+Example: ST R1, 2000 (Store the value in register R1 into memory address 2000). 
+
+Move (MOV): 
+
+The move instruction copies data from one register to another. 
+
+Example: MOV R1, R2 (Copy the contents of register R2 into register R1). 
+
+Exchange (XCHG): 
+
+The exchange instruction swaps the contents of two registers or a register and a memory location. 
+
+Example: XCHG R1, R2 (Swap the contents of registers R1 and R2). 
+
+Push and Pop: 
+
+Push and pop instructions are used to transfer data to and from a stack data structure. 
+
+Example: 
+
+PUSH R1 (Push the contents of register R1 onto the stack). 
+
+POP R1 (Pop the top value from the stack and store it in register ) 
+
+ 
+
+ 
+
+ 
 CPU instruction formats refer to the structure or layout of instructions that the CPU can execute. These formats define how the instruction is encoded in binary and how various parts of the instruction represent different components such as the operation code (opcode), operands, addressing modes, etc. Here are the common CPU instruction formats:
 
 1. Fixed-Length Instruction Format:
